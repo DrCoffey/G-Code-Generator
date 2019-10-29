@@ -41,7 +41,7 @@ classdef gCode < handle
             
             % Open the file for writing
             disp('*******************************************************************************')
-            fname = fullfile(obj.folder, [injection.injectionName{:} '_Injection.ncc']);
+            fname = fullfile(obj.folder, [injection.injectionName{:} '_Cannula.ncc']);
             [obj.fid, e] = fopen(fname,'w+');
             disp(e)
             
